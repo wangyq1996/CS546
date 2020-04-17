@@ -1,0 +1,44 @@
+body {
+    background-color: azure;
+    text-align: center;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight:bold;
+    font-style: oblique;
+}
+
+.success {
+    color:#28a745;
+    font-size: larger;
+    font-weight:bold;
+}
+
+.failure {
+    color:#dc3545;
+    font-size: larger;
+    font-weight:bold;
+}
+
+p {
+    font-size: large;
+    font-weight: 500;
+}
+
+form {
+    font-size: x-large;
+    color:brown;
+    font-weight: 600;
+    font-style: italic;
+}
+
+footer {
+    font-size: small;
+    font-weight: bold;
+}
+
+section{
+    font-size: large;
+    color:red;
+}

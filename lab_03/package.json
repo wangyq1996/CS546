@@ -1,0 +1,16 @@
+{
+    "name": "lab03",
+    "version": "1.0.0",
+    "description": "lab_03",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "Yuqi's",
+      "Lab_03"
+    ],
+    "author": "Yuqi_Wang_10446070",
+    "license": "ISC"
+  }

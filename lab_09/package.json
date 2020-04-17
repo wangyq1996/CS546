@@ -1,0 +1,19 @@
+{
+  "name": "lab_09",
+  "version": "1.0.0",
+  "description": "palindrome check program",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Yuqi Wang 10446070",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.1",
+    "handlebars": "^4.7.5",
+    "nodemon": "^2.0.2"
+  }
+}

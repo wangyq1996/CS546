@@ -1,0 +1,59 @@
+body {
+    background-color: azure;
+    text-align: center;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight:bold;
+    font-style: oblique;
+}
+
+.is-palindrome {
+    color:#0000FF;
+    font-size: larger;
+    font-weight:bold;
+}
+
+.not-palindrome {
+    color:#FF0000;
+    font-size: larger;
+    font-weight:bold;
+}
+
+p {
+    font-size: large;
+    font-weight: 500;
+}
+
+ol{
+    font-size: large;
+    font-weight: 500;
+    font-weight: bold;
+    text-align: left;
+}
+
+li{
+    font-size: large;
+    font-weight: 500;
+    font-weight: bold;
+    text-align: left;
+}
+
+form {
+    font-size: x-large;
+    color:brown;
+    font-weight: 600;
+    font-style: italic;
+}
+
+footer {
+    font-size: small;
+    font-weight: bold;
+    margin-top: 200px;
+}
+
+section{
+    font-size: large;
+    color:red;
+}
