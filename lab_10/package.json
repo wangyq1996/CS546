@@ -1,0 +1,20 @@
+{
+    "name": "lab_10",
+    "version": "1.0.0",
+    "description": "lab_10",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Yuqi Wang 10446070",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^4.0.1",
+        "cookie-parser": "^1.4.5",
+        "express": "^4.17.1",
+        "express-handlebars": "^4.0.3",
+        "express-session": "^1.17.1",
+        "nodemon": "^2.0.3"
+    }
+}
