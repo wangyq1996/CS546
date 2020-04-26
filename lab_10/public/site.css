@@ -1,0 +1,31 @@
+body {
+    background-color: azure;
+    text-align: left;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+p {
+    font-size: large;
+    font-weight: 500;
+}
+
+form {
+    font-size: x-large;
+    color: brown;
+    font-weight: 600;
+    font-style: italic;
+}
+
+footer {
+    font-size: small;
+    font-weight: bold;
+}
+
+section {
+    font-size: large;
+}
