@@ -4,6 +4,8 @@ const path = require('path');
 const bcrypt = require('bcryptjs');
 const userData = require('./userData');
 
+const saltRounds = 16;
+
 router.get('/private', (req, res) => {
     if (req.session.user) {
         res.render('pages/private.handlebars', req.session.userData);
@@ -24,13 +26,14 @@ router.get('/', (req, res) => {
     } else res.render('pages/signin.handlebars', { title: 'Login Page' });
 });
 
-router.post('/login', (req, res) => {
+router.post('/login', async (req, res) => {
     const header = 'Personal Page';
     let userName = JSON.stringify(req.body.username);
     userName = userName.substring(1, userName.length - 1);
     let passWord = JSON.stringify(req.body.password);
     passWord = passWord.substring(1, passWord.length - 1);
-    const check = userCheck(userName, passWord);
+    const check = await userCheck(userName, passWord);
+    console.log(check);
     if (!check) {
         res.status(401);
         res.render('pages/signin.handlebars', { title: 'Login Page' });
@@ -41,10 +44,10 @@ router.post('/login', (req, res) => {
     res.redirect('/private');
 });
 
-const userCheck = (userName, passWord) => {
+const userCheck = async (userName, passWord) => {
     for (let i of userData) {
         if (userName === i.username) {
-            if (bcrypt.compare(passWord, i.hashedPassword)) return i;
+            if (await bcrypt.compare(passWord,i.hashedPassword)) return i;
         }
     }
     return false;
